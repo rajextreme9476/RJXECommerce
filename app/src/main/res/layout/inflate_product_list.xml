@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_2dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivProductAvatar"
+        android:layout_width="70dp"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        app:layout_constraintLeft_toRightOf="@+id/ivProductAvatar"
+        android:layout_width="wrap_content"
+        android:text="Stole Whole"
+        android:layout_margin="@dimen/margin_2dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvCategoryName"
+        app:layout_constraintLeft_toRightOf="@+id/ivProductAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvProductName"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/margin_2dp"
+        android:text="3"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvQty"
+        app:layout_constraintLeft_toRightOf="@+id/ivProductAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/margin_2dp"
+        android:text="QTY : 3 "
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        app:layout_constraintLeft_toRightOf="@+id/tvQty"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:text="3000"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
